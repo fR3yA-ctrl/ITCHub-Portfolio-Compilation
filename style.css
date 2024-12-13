@@ -1,0 +1,316 @@
+/* GLOBAL STYLES */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #E1EBED;
+}
+
+/* HEADER */
+header {
+    padding: 20px;
+    background-color: #172738;
+    color: #ffffff;
+    text-align: center; 
+}
+
+/* HOMEPAGE STYLES */
+.homepage-title {
+    text-align: left; 
+    font-size: 20px;
+    margin: 10px 0; 
+    padding-left: 20px;
+}
+
+/* NAVIGATION BAR */
+.navbar {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #172738;
+    font-size: 16px;
+    padding: 10px 15px;
+    border-radius: 0px; /* Rounded corners */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar ul li a:hover {
+    background-color: #34495e;
+    color: #ffffff;
+}
+
+/* PORTFOLIO GRID (HOMEPAGE) */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    background-color: #f3f9fc;
+}
+
+.portfolio-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.portfolio-item:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio-item img {
+    max-width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.portfolio-item h3 {
+    font-size: 20px;
+    margin: 10px 15px 5px;
+    color: #34495e;
+}
+
+.portfolio-item p {
+    font-size: 16px;
+    margin: 0 15px 15px;
+    color: #7f8c8d;
+}
+
+/* FLEX SECTIONS (ABOUT ME & CONTACT) ALL PORTFOLIOS */
+.flex-container {
+    display: flex;
+    margin-top: 20px;
+    gap: 0px;
+    justify-content: space-between; 
+    margin: 0 auto;
+}
+
+/* About Me Section */
+.about-me {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    background-color: #172738; 
+    color: #ffffff; 
+    padding: 20px;
+    border-radius: 0px; 
+    margin: 20px 0;
+    text-align: center; 
+}
+
+/* Layout for About Me content (photo and text) */
+.about-me-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: justify-content;
+    width: 100%;
+    max-width: 1200px; 
+    margin: 0 auto;
+}
+
+/* About Me Photo */
+.about-me-photo {
+    flex-shrink: 0;
+    margin-right: 0px; 
+}
+
+.about-me-image {
+    width: 300px; /* Adjust size of the image */
+    height: 400px; /* Adjust size of the image */
+    object-fit: cover; 
+    display: block; 
+    max-width: 100%; 
+}
+
+/* About Me Text */
+.about-me-info {
+    flex: 1;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: Left-aligned; /* Align text to the left for readability */
+    max-width: 70%; /* Limit width of text to ensure it’s not too stretched out */
+}
+
+.about-me h2 {
+    font-size: 25px;
+    margin-bottom: 0px;
+}
+
+/* Contact Section */
+
+.contact {
+    flex: 1;
+    background-color: #ffffff; /* White background */
+    color: #172738; /* Dark text color */
+    padding: 20px;
+    border-radius: 0px; /* Rounded corners */
+}
+
+.contact h2 {
+    color: #172738; /* Dark heading for Contact */
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    color: #34495e; /* Slightly lighter dark gray text */
+	
+}
+
+/* GENERAL CONTENT STYLING (Centering Content) */
+section {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 20px auto; /* Centers content on the page */
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 1200px; /* Limit the width to keep content centered */
+}
+
+/* Center all text in content sections */
+#portfolio1 .content, 
+#portfolio2 .content, 
+#portfolio3 .content, 
+#portfolio4 .content, 
+#portfolio5 .content, 
+#portfolio6 .content {
+    max-width: 1200px; /* Max width for content */
+    margin: 0 auto; /* Centers the content */
+    padding: 20px;
+    text-align: justify; 
+}
+
+/* JUSTIFY TEXT */
+p, ul, li {
+    text-align: justify; 
+    line-height: 1.6; 
+}
+
+/* Specific Styling for Portfolio Content */
+#portfolio1 header,
+#portfolio2 header,
+#portfolio3 header,
+#portfolio4 header,
+#portfolio5 header,
+#portfolio6 header {
+    text-align: center;
+    padding: 20px;
+    background-color: #172738;
+    color: white;
+}
+
+/* REFLECTION SECTION */
+.reflection {
+    background-color: #e8f5e9;
+    padding: 20px;
+    margin-top: 30px;
+    text-align: center; 
+}
+
+/* FOOTER STYLING */
+footer {
+    text-align: center;
+    background-color: #172738;
+    color: white;
+    padding: 10px;
+}
+
+/* Center Portfolio Sections */
+#portfolio1 article, 
+#portfolio2 article, 
+#portfolio3 article, 
+#portfolio4 article, 
+#portfolio5 article, 
+#portfolio6 article {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: justify; /* Justifies the text in articles */
+}
+
+/* Content Centering for all Portfolio Sections */
+#portfolio1 .content, 
+#portfolio2 .content, 
+#portfolio3 .content, 
+#portfolio4 .content, 
+#portfolio5 .content, 
+#portfolio6 .content {
+    margin: 0 auto; /* Centers the content */
+    padding: 20px;
+    text-align: justify; 
+}
+
+/* Portfolio 1 Image Adjustments */
+#portfolio1 .history-images {
+    display: flex;
+    justify-content: center; /* Centers the images horizontally */
+    gap: 20px; /* Adds space between the images */
+    flex-wrap: wrap; /* Ensures images wrap on smaller screens */
+}
+
+#portfolio1 .history-image {
+    width: 100px;
+    height: 100px; 
+    object-fit: cover; /* Image won't stretch */
+    border-radius: 50%; /* Round image */
+    margin: 10px; /* Space between images */
+    display: block; /* Ensures the image is a block-level element */
+}
+
+
+.history-images {
+    display: flex;
+    flex-direction: column; /* Stack images vertically */
+    align-items: center; /* Center the images */
+    gap: 20px; /* Space between images */
+}
+
+/* Styling for each history figure */
+.history-figure {
+    display: flex;
+    flex-direction: column; /* Stack the image and caption vertically */
+    align-items: center; /* Center-align the image and caption */
+    text-align: center; /* Center the caption */
+}
+
+/* Styling for history image */
+.history-image {
+    width: 150px; 
+    height: 150px; 
+    object-fit: cover; /* Ensure the image covers the area inside the circle */
+    border-radius: 50%; /* Makes the images round */
+}
+
+/* Styling for the caption */
+.history-figure figcaption {
+    margin-top: 8px; /* Space between image and caption */
+    font-size: 14px; /* Smaller font size for the caption */
+    color: #34495e; /* Set color for the caption */
+}
